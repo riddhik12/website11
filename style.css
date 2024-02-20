@@ -1,0 +1,138 @@
+div{
+	display: block;
+	align-content: space-around;
+}
+body{
+	margin: 0;
+}
+.banner{
+	color: darkblue;
+	margin: 20px;
+	border-radius: 20px;
+	padding: 30px;
+	text-align: center;
+	background: url("pictures/sea.jpg") center/cover;
+	font-size:30px ;
+	position: relative;
+	background-size: cover;
+    background-position: center;
+}
+h1{
+	font-family: 'Protest Riot', sans-serif;
+	font-family: 'Satisfy', cursive;
+	font-size: 80px;
+	color: blue;
+	text-shadow: 2px 2px 4px rgba(255, 255, 255, 60);
+	margin: 0;
+
+}
+h2{
+	font-family: 'Protest Riot', sans-serif;
+	font-family: 'Satisfy', cursive;
+	font-size: 40px;
+	text-align: center;
+	color: #27ae60;
+}
+h3{
+	font-family: 'Roboto Slab', serif;
+	font-size: 30px;
+	color: rosybrown;
+}
+#book{
+	color: black;
+	background-color: white;
+	padding: 16px 40px;
+	border-radius: 4px;
+	font-weight: bold;
+	text-decoration: none;
+	transition: margin 0.3s, box-shadow 0.3s;
+}
+#book:hover{
+	background-color: skyblue;
+}
+.cards{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+}
+#head{
+	color: white;
+	font-size: 40px;
+	margin-block-start: 0;
+}
+#descrip{
+	font-size: 20px;
+	color: black;
+}
+.video{
+	position: relative;
+	overflow: hidden;
+}
+.video-center{
+	display: block;
+	margin: auto;
+	width: 80%;
+	transition: transform 0.3s ease-in-out;
+	border-radius: 20px;
+	padding: 30px;
+}
+.video-center:hover{
+	transform: scale(1.1);
+}
+.card{
+	margin: 20px;
+	box-shadow: 0 0 16px rgba(0, 0, 0, 1.0);
+	border-radius: 4px;
+	text-align: center;
+	max-width: 300px;
+	transition: margin 0.3s, box-shadow 0.3s;
+	margin-left: 35px ;
+	margin-right: 35px;
+}
+.card-img {
+	max-width: -webkit-fill-available;
+	height: 200px;
+	border-radius: 4px;
+	border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.card:hover{
+	margin: 5px;
+	box-shadow: 0 0 25px rgba(0, 0, 0, 50);
+	border-radius: 6px;
+}
+.footer{
+	background-color: lightgrey;
+	font-family: 'Tangerine', cursive;
+	font-size: 40px;
+	text-align: center;
+	text-indent: 5px;
+}
+#link{
+	background-color: transparent;
+	font-family: 'Tangerine', cursive;
+	font-size: 40px;
+	text-decoration:none;
+	color: blue;
+	padding: 0;
+}
+#link:hover{
+	color: lightcoral;
+}
+a{
+	text-decoration: none;
+}
+@media (max-width: 960px) {
+  .cards {
+  	display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+	}
+  } 
+ @media (max-width: 500px) {
+  .cards {
+  	display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+	}
+  } 
